@@ -15,14 +15,19 @@ img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 
 *{
-  scroll-behavior: smooth
+  scroll-behavior: smooth;
+  transition: all 0.3s ease; 
 }
 
+body{
+  background: rgba(44, 20, 133, 0.448);
+}
 .cssMemSlider-body {
-  max-width: 1200px;
+  max-width: 1100px;
   padding: 20px;
   margin: 0 auto;
 }
+
 .cssMemSlider-slider {
 width: 100%;
 overflow: hidden;
@@ -55,7 +60,7 @@ overflow: hidden;
 
 .item-image{
  width: 100%;
- padding: 0 0 60% 0;
+ padding: 0 0 55% 0;
  background-repeat: no-repeat;
  background-size: cover;
  margin:  0 0 20px 0;
@@ -81,6 +86,20 @@ overflow: hidden;
   padding: 10px;
 }
 
-.circle:target{
-    background-color: slateblue;
+
+
+.circle-link:hover .circle{
+  background: rgb(255, 255, 255);
+  border: 1px solid rgb(255, 255, 255);
+ }
+
+ .item1:target .circle1{
+  border: 1px solid slateblue;
+  background: slateblue;
 }
+
+ .cssMemSlider-control{
+ display: flex;
+ justify-content: flex-end;
+ margin-top: -35px;
+ }
