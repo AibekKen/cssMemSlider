@@ -91,9 +91,29 @@ overflow: hidden;
   transition: transform 0.8s ease-in;
 }
 
-.slider-item >.image-1{
+.slider-item > .item-text{
+  opacity: 0;
+  transition: opacity 0.8s ease;
+}
+
+.slider-item > .image-1{
   transform: scale(1);
 }
+
+.slider-item > .text1{
+  opacity: 1;
+}
+
+.slider-item:target >.item-image{
+  transform: scale(1);
+}
+
+.slider-item:target >.item-text{
+  opacity: 1;
+}
+
+
+
 .slider-item:target >.item-image{
   transform: scale(1);
 }
