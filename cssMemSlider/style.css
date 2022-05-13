@@ -103,6 +103,22 @@ overflow: hidden;
  margin-top: -2rem;
  }
 
+ .item1:target .circle1{
+  background: rgb(52, 44, 101);
+ }
+
+ .item2:target .circle2{
+  background: rgb(52, 44, 101);
+ }
+
+ .item3:target .circle3{
+  background: rgb(52, 44, 101);
+ }
+
+ .item4:target .circle4{
+  background: rgb(52, 44, 101);
+ }
+
  @media (max-width: 450px) {
   .item-image{
     margin: 0 0 3rem 0;
