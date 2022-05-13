@@ -86,6 +86,17 @@ overflow: hidden;
 }
 
 
+.slider-item > .item-image{
+  transform: scale(0);
+  transition: transform 0.8s ease-in;
+}
+
+.slider-item >.image-1{
+  transform: scale(1);
+}
+.slider-item:target >.item-image{
+  transform: scale(1);
+}
 
 .circle-link:hover .circle{
   background: rgb(255, 255, 255);
